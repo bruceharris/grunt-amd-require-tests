@@ -1,7 +1,7 @@
 {
   "name": "grunt-amd-require-tests",
   "description": "Finds test files and \"require\"s\"s them",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/bruce.harris/grunt-amd-require-tests",
   "author": {
     "name": "Bruce Harris",
