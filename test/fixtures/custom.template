@@ -1,0 +1,10 @@
+// **** Custom template example ****
+// You may provide a custom lodash template for the file to be generated
+// with the `templateFile` option. The template is called with an array
+// of file objects (named `files`) containing the following properties:
+//   .name        filename with the trailing *.js truncated
+//   .fullName    full filename
+//   .comma       an empty string for the last file in the array, otherwise a comma
+require([<% _.forEach(files, function(file, i, arr) {%>
+  '${ file.name }'${ file.comma }  // ${ file.fullName }<% }); %>
+], function(){});
