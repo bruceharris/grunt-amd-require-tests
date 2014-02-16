@@ -32,8 +32,8 @@ In your project's Gruntfile, add a section named `amd_require_tests` to the data
 grunt.initConfig({
   amd_require_tests: {
     options: {
+      path: 'optional/base/path/for/files/to/be/found',
       templateFile: 'optional/path/to/custom.template'
-      path: 'optional/base/path/for/files/to/be/found'
     },
     your_target: {
       files: 'path/to/generatedFile.js': ['path/to/test/files/to/find/e/g/**/*Spec.js']
@@ -43,6 +43,14 @@ grunt.initConfig({
 ```
 
 ### Options
+
+#### options.path
+Type: `String`
+Default value: `'./'`
+
+Optional base path for files to be found. Filename patterns will be searched from
+this base path, and filenames of discovered test files will appear in generated
+file with paths relative to this path.
 
 #### options.templateFile
 Type: `String`
@@ -58,14 +66,17 @@ of file objects (named `files`) containing the following properties:
 * `.fullName`    full filename
 * `.comma`       an empty string for the last file in the array, otherwise a comma
 
-#### options.path
-Type: `String`
-Default value: `'./'`
-
-Optional base path for files to be found. Filename patterns will be searched from
-this base path, and files will appear in generated file with paths relative to this path.
-
 ### Usage Examples
+
+The examples below assume a file directory structure such as:
+```
+/
+|-- Gruntfile.js
++-- test
+    |-- barSpec.js
+    +-- foo
+        +-- fooSpec.js
+```
 
 #### Default Options
 In this example, the default options are used. A file named `requireAllSpecs.js` will
@@ -139,7 +150,7 @@ define([
 In this example, a custom template file is specified.
 
 A file named `requireAllSpecs.js` will be created, and it will contain JavaScript code that will "require" all files (via the `require()` function, as specified in the custom template)
-matching the glob pattern `**/*Spec.js`, relative to the Gruntfile.
+matching the glob pattern `test/**/*Spec.js`, relative to the Gruntfile.
 
 Configuration:
 ```js
@@ -149,7 +160,7 @@ grunt.initConfig({
       templateFile: 'path/to/custom.template',
     },
     files: {
-      'test/requireAllSpecs.js': ['/test/**/*Spec.js']
+      'test/requireAllSpecs.js': ['test/**/*Spec.js']
     },
   },
 });
