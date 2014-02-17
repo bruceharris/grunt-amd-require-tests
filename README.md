@@ -38,7 +38,9 @@ grunt.initConfig({
       templateFile: 'optional/path/to/custom.template'
     },
     your_target: {
-      files: 'path/to/generatedFile.js': ['path/to/test/files/to/find/e/g/**/*Spec.js']
+      files: {
+        'path/to/generatedFile.js': ['path/to/test/files/to/find/e/g/**/*Spec.js']
+      }
     },
   },
 });
