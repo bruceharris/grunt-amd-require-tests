@@ -1,7 +1,7 @@
 {
   "name": "grunt-amd-require-tests",
   "description": "Finds test files in AMD projects and \"require\"s them for your test runner",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/bruce.harris/grunt-amd-require-tests",
   "author": {
     "name": "Bruce Harris",
