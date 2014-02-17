@@ -37,7 +37,7 @@ module.exports = function(grunt) {
 // We use define rather than require as the former works with relative paths\n\
 define([\n<%\
 _.forEach(files, function(file, i, arr) {%>\
-  \'${ file.name }\'${ file.comma }\n<%\
+  \'./${ file.name }\'${ file.comma }\n<%\
 }); %>\
 ], function(){\n\
   return null;\n\
