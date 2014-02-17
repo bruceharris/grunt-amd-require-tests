@@ -110,6 +110,7 @@ define([
   './test/barSpec',
   './test/foo/fooSpec'
 ], function(){
+  'use strict';
   return null;
 });
 ```
@@ -146,6 +147,7 @@ define([
   './barSpec',
   './foo/fooSpec'
 ], function(){
+  'use strict';
   return null;
 });
 ```

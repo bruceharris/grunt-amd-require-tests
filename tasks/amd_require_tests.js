@@ -40,6 +40,7 @@ _.forEach(files, function(file, i, arr) {%>\
   \'./${ file.name }\'${ file.comma }\n<%\
 }); %>\
 ], function(){\n\
+  \'use strict\';\n\
   return null;\n\
 });';
 
