@@ -40,6 +40,6 @@
     "grunt": "~0.4.2"
   },
   "keywords": [
-    "gruntplugin amd require test tests spec specs find discover runner"
+    "gruntplugin amd require requirejs unit tdd test tests spec specs find discover runner JavaScript"
   ]
 }
