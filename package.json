@@ -2,22 +2,22 @@
   "name": "grunt-amd-require-tests",
   "description": "Finds test files in AMD projects and \"require\"s them for your test runner",
   "version": "0.1.5",
-  "homepage": "https://github.com/bruce.harris/grunt-amd-require-tests",
+  "homepage": "https://github.com/bruceharris/grunt-amd-require-tests",
   "author": {
     "name": "Bruce Harris",
     "email": "bharris845@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/bruce.harris/grunt-amd-require-tests.git"
+    "url": "git://github.com/bruceharris/grunt-amd-require-tests.git"
   },
   "bugs": {
-    "url": "https://github.com/bruce.harris/grunt-amd-require-tests/issues"
+    "url": "https://github.com/bruceharris/grunt-amd-require-tests/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/bruce.harris/grunt-amd-require-tests/blob/master/LICENSE-MIT"
+      "url": "https://github.com/bruceharris/grunt-amd-require-tests/blob/master/LICENSE-MIT"
     }
   ],
   "main": "Gruntfile.js",
